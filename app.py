@@ -3,7 +3,7 @@ import joblib
 
 app = Flask(__name__)
 
-# Load the trained model
+# Loading the trained model here
 model = joblib.load('credit_card_model.pkl')
 
 @app.route('/', methods=['GET', 'POST'])
